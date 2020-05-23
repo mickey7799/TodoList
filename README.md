@@ -1,4 +1,4 @@
-# ToDoList
+# A Todo List
 
 ## Techniques
 - React Native
