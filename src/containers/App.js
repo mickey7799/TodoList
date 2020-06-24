@@ -50,26 +50,7 @@ class App extends Component {
   }
    
   
-  // onAdd = (text) => {
-  //   const { items, dispatch } = this.props
-  //   dispatch(TodoAction.addTodo(text))
-  
-  // }
-
-  // onRemove = (index) => {
-  //    const { items, dispatch } = this.props
-  //    dispatch(TodoAction.removeTodo(index)) 
-  // }
-
-  // onCheck = (index)=>{
-  //   const { items, dispatch } = this.props;
-  //   dispatch(TodoAction.toggleComplete(index))
-  // }
-
-  // onRemoveComplete = () =>{
-  //    const {dispatch} = this.props;
-  //    dispatch(TodoAction.removeComplete())
-  // }
+ 
   
   render() {
          const {dispatch, items, onAdd, onRemove, onCheck, onRemoveComplete } = this.props
