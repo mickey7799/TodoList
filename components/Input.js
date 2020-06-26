@@ -4,8 +4,14 @@ import { TextInput, View, StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   textInput: {
     height: 40, 
-    paddingLeft:20
-
+    paddingLeft:20,
+    fontSize: 18
+    
+  },
+  input : {
+    borderStyle: 'solid',
+    borderColor: 'gray',
+    borderBottomWidth: 0.2
   }
 })
 
@@ -31,10 +37,10 @@ export default class Input extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.input} >
         <TextInput 
            style={styles.textInput} 
-           placeholder="Enter an item!"
+           placeholder="Enter a task here"
            value= {this.state.input}
            onChangeText={this.onChangeText}
            onSubmitEditing={this.onSubmit}

@@ -12,8 +12,22 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
     
   },
-  text: {
-    fontSize: 24
+  textComplete: {
+    textDecorationLine: 'line-through',
+    fontSize: 22
+  },
+  textIncomplete: {
+    fontSize: 22
+  },
+  cross: {
+    color:'red', 
+    fontSize: 15
+  },
+  crossContainer: {
+    marginTop: 0, 
+    marginRight: 'auto', 
+    marginBottom: 5, 
+    marginLeft: 20
   }
   
 })
@@ -28,16 +42,17 @@ export default class List extends Component {
           <View
           style={styles.item}
           key= {index}>
-           
-           <Text style={styles.text}>{item.text}</Text>
-            
+           {item.completed ? 
+           <Text style={styles.textComplete}>{item.text}</Text> :
+           <Text style={styles.textIncomplete}>{item.text}</Text>
+           }
            <View style={{flexDirection:'row'}}>
             <Checkbox style={{marginLeft:'auto'}}
               onPress={()=> onCheck(item.key) }
               completed={item.completed}
               />
-            <TouchableOpacity onPress={()=> onPressItem(item.key)} style={{marginLeft:20}}>
-              <Text style={{margin:'auto', color:'red', fontSize: 20}}>X</Text>
+            <TouchableOpacity onPress={()=> onPressItem(item.key)} style={styles.crossContainer}>
+              <Text style={styles.cross}>x</Text>
             </TouchableOpacity>
            </View> 
            

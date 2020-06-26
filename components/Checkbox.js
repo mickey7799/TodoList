@@ -10,7 +10,7 @@ export default class Checkbox extends Component {
     const { completed, onPress } = this.props;
     
     if (completed) {
-      checkbox = <View style={{marginTop: 5, marginBottom: 5, marginLeft: 5, marginRight: 5, width: 10, height: 10, borderWidth: 0.5, backgroundColor: 'black' }}></View>;
+      checkbox = <View style={{marginTop: 5, marginBottom: 5, marginLeft: 4, marginRight: 5, width: 10, height: 10, borderWidth: 0.5, backgroundColor: 'black' }}></View>;
     } else {
       checkbox = <View style={{ margin: 'auto', width: 20, height: 20, borderWidth: 0.5, borderColor: 'black' }}></View>;
     }
