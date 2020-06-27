@@ -11,6 +11,9 @@ import * as TodoAction from '../actions/todolist';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: 500
   }
   
 })
