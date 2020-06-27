@@ -3,7 +3,7 @@ import { TextInput, View, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   textInput: {
-    height: 40, 
+    height: 50, 
     paddingLeft:20,
     fontSize: 18
     

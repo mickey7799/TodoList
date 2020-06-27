@@ -6,6 +6,7 @@ import Checkbox from './Checkbox'
 const styles = StyleSheet.create({
   item: {
     backgroundColor: '#ffffff',
+    marginTop: 10,
     marginBottom: 5,
     padding: 15,
     flexDirection: 'row',
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   crossContainer: {
-    marginTop: 0, 
+    marginTop: 5, 
     marginRight: 'auto', 
     marginBottom: 5, 
     marginLeft: 20

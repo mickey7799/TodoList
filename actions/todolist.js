@@ -1,6 +1,6 @@
 import * as TodoActionTypes from '../actionTypes/todolist';
 
-let nextTodoId = 0;
+let nextTodoId = 4;
 
 export const addTodo = text => {
     return{

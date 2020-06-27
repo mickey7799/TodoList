@@ -1,13 +1,12 @@
-import React, { Component, PropTypes } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native'
+import React, { Component } from 'react'
+import { View, StyleSheet, TouchableOpacity} from 'react-native'
 
-const styles = StyleSheet.create({
-})
+
 
 export default class Checkbox extends Component {
  
   render() {
-    const { completed, onPress } = this.props;
+    const { completed} = this.props;
     
     if (completed) {
       checkbox = <View style={{marginTop: 5, marginBottom: 5, marginLeft: 4, marginRight: 5, width: 10, height: 10, borderWidth: 0.5, backgroundColor: 'black' }}></View>;
@@ -16,7 +15,7 @@ export default class Checkbox extends Component {
     }
 
     return (
-      <TouchableOpacity onPress={this.props.onPress} style={{ margin: 'auto', width: 20, height: 20, borderWidth: 0.8, borderColor: 'black' }}>
+      <TouchableOpacity onPress={this.props.onPress} style={{ marginTop: 10, marginBottom: 5, width: 20, height: 20, borderWidth: 0.8, borderColor: 'black' }}>
         {checkbox}
       </TouchableOpacity>
     
