@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "6f000876a24331e74930",
-    "url": "/TodoList/static/js/app.b7f5d6ad.chunk.js"
+    "revision": "606151379bc214eecefe",
+    "url": "/TodoList/static/js/app.05d68337.chunk.js"
   },
   {
     "revision": "f1ae232303dfaa06df15",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/TodoList/favicon.ico"
   },
   {
-    "revision": "7a9dd561b5e73f5b125551983e97a30a",
+    "revision": "82b6c6aeff075ec591ff84472cc979d7",
     "url": "/TodoList/index.html"
   },
   {
