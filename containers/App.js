@@ -38,7 +38,7 @@ const mapDispatchToProps = (dispatch) => {
 
 
 
-class App extends Component {
+class ContainerApp extends Component {
 
   static propTypes = {
     items: PropTypes.array.isRequired,
@@ -68,4 +68,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(ContainerApp)
