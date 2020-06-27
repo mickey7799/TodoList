@@ -13,7 +13,11 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: 500
+    marginTop: 50,
+    marginBottom: 50,
+    maxWidth: 500,
+    borderTopLeftRadius: 20,
+    // borderRadius: 20
   }
   
 })

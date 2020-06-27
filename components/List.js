@@ -15,10 +15,12 @@ const styles = StyleSheet.create({
   },
   textComplete: {
     textDecorationLine: 'line-through',
-    fontSize: 22
+    fontSize: 22,
+    marginRight: 100
   },
   textIncomplete: {
-    fontSize: 22
+    fontSize: 22,
+    marginRight: 100
   },
   cross: {
     color:'red', 
